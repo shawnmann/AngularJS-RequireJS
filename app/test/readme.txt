@@ -1,0 +1,1 @@
+﻿This folder includes an AngularJS module that works with RequireJS in a SPA setting.

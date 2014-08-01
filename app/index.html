@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html> <!-- No ng-app on html tag, we bootstrap AngularJS manually -->
+<head>
+    <title>AngularJS with RequireJS</title>
+
+    <!-- Load site styles -->
+    <link rel="stylesheet" href="styles/site.css" />
+
+</head>
+
+<!-- Hook the MainController (from app.js) onto the body tag -->
+<body ng-controller="MainController as main">
+
+    <!-- Menu -->
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#Mods/Test">Test</a></li>
+    </ul>
+
+    <!-- View Container (this is where we load our module content) -->
+    <div class="view-animate-container">
+        <div ng-view class="view-animate"></div>
+    </div>
+
+    <!-- Load RequireJS and then load main.js -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.1/require.min.js" 
+            data-main="main">
+    </script>
+
+</body>
+</html>

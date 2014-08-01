@@ -1,0 +1,1 @@
+﻿This directory is for AngularJS modules, which can be downloaded here: https://code.angularjs.org/1.2.21/
